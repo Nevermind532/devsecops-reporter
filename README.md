@@ -46,19 +46,26 @@ python main.py
 <img width="1895" height="933" alt="image" src="https://github.com/user-attachments/assets/d6749ad9-bbca-4969-95bf-d5007d015212" />
 
 ### 5. Структура репозитория
+
+```text
 devsecops-reporter/
-├── run.py (или main.py)      ← запуск проекта
+├── run.py                  ← главный скрипт (или main.py)
 ├── reporter/
-│   └── parsers/              ← парсеры для каждого инструмента
-│       ├── base.py           ← базовый класс
-│       ├── bandit.py
-│       ├── zap.py
-│       ├── semgrep.py
-│       └── coverage.py
-├── templates/report.html     ← шаблон отчёта (Jinja2 + Chart.js)
-├── reports_examples/         ← сюда кидаем любые JSON-отчёты
-├── .github/workflows/        ← CI/CD + публикация на GitHub Pages
-└── screenshot.png            ← пример готового отчёта
+│   └── parsers/            ← парсеры для каждого инструмента
+│       ├── base.py         ← базовый класс
+│       ├── bandit.py       ← Bandit (SAST)
+│       ├── zap.py          ← OWASP ZAP (DAST)
+│       ├── semgrep.py      ← Semgrep (SAST)
+│       └── coverage.py     ← Coverage.py
+├── templates/
+│   └── report.html         ← красивый шаблон с Chart.js
+├── reports_examples/       ← сюда кидаем любые JSON-отчёты
+├── .github/
+│   └── workflows/          ← GitHub Actions + деплой на Pages
+├── screenshot.png          ← пример готового отчёта
+├── requirements.txt
+└── README.md
+```
 
 ### 6. Технические требования
 
