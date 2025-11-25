@@ -37,11 +37,15 @@ python run.py
 # или
 python main.py
 ```
-4 пример использования проекта
-Кидаем любой JSON-отчёт в папку reports_examples/ (например, my-bandit-scan.json) — он сразу появится в отчёте.
+###4 пример использования проекта
+Кидаем любой JSON - файл в папку reports_examples/ (например, my-bandit-scan.json) 
+после чего заходим в терминал и запускаем наш проект
+нас перекидывает на сайт где происходит отчет вашего кода
+
 Пример результата:
 <img width="1895" height="933" alt="image" src="https://github.com/user-attachments/assets/d6749ad9-bbca-4969-95bf-d5007d015212" />
-5. Структура репозитория
+
+###5. Структура репозитория
 textdevsecops-reporter/
 ├── run.py (или main.py)      ← запуск проекта
 ├── reporter/
@@ -55,7 +59,8 @@ textdevsecops-reporter/
 ├── reports_examples/         ← сюда кидаем любые JSON-отчёты
 ├── .github/workflows/        ← CI/CD + публикация на GitHub Pages
 └── screenshot.png            ← пример готового отчёта
-6. Технические требования
+
+###6. Технические требования
 
 Python 3.8+
 ОС: Windows / Linux / macOS
@@ -64,7 +69,8 @@ Python 3.8+
 Никаких Docker, баз данных или сложных настроек — работает из коробки
 Nevermind532 — автор проекта, архитектура, реализация всех парсеров, дизайн отчёта, CI/CD
 Роль: Full-stack DevSecOps студент → junior+ уровень
-8. Контакты и обратная связь
+
+###8. Контакты и обратная связь
 
 GitHub: https://github.com/nevermind532
 почта: brawlctiker@gmail.com
